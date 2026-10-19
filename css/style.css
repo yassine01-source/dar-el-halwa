@@ -91,3 +91,19 @@ caption {
     caption-side:bottom;
     font-style: italic;
 }
+#commande
+{
+    .page
+    {
+        display: grid;
+        grid-template-areas:
+        "entete entete"
+        "menu contenu"
+        "pied pied";
+        grid-template-columns: 220px 1fr;
+        gap: 12px;
+    }
+    .entete { grid-area: entete; }
+    .menu { grid-area: menu; }
+    .contenu { grid-area: contenu; }
+}
