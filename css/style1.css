@@ -246,3 +246,48 @@ main {
 footer {
     grid-area: pied;
 }
+.carte{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+@media(min-width: 768px){
+    .carte{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(min-width: 1024px){
+    .carte{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 768px) {
+.grille-produits { grid-template-columns: repeat(2, 1fr); }
+footer { flex-direction: row; }
+}
+@media (min-width: 1024px) {
+.grille-produits { grid-template-columns: repeat(3, 1fr); }
+}
+@media(max-width: 768px){
+    .grille-produits{grid-template-columns: repeat(2, 1fr)}
+}
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #333;
+    }
+    p{
+        color: #d4bda8;
+    }
+    dl{
+        color: #d4bda8;
+    }
+    h1{
+        color: #fcf8f2;
+    }
+    ol{
+        color: #d4bda8;
+    }
+    table{
+        color: #d4bda8;
+    }
+}
